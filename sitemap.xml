@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
   <url>
     <loc>https://lexus-upholstery-riyadh.github.io/</loc>
-    <lastmod>2026-02-23</lastmod>
-    <changefreq>hourly</changefreq>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    
+    <video:video>
+      <video:thumbnail_loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</video:thumbnail_loc>
+      <video:title>تنجيد لكزس وحماية PPF الرياض - مركز 1car_luxury</video:title>
+      <video:description>أفضل تنجيد شد وكالة وحماية PPF في الغرابي بالرياض لسيارات لكزس ومرسيدس.</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=BtKoqRR9FvI</video:content_loc>
+      <video:player_loc>https://www.youtube.com/embed/BtKoqRR9FvI</video:player_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-02-23T11:30:00+03:00</video:publication_date>
+      <video:live>no</video:live>
+    </video:video>
   </url>
+
+  <url>
+    <loc>https://lexus-upholstery-riyadh.github.io/?q=تنجيد_لكزس_الغرابي</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://lexus-upholstery-riyadh.github.io/?q=حماية_PPF_الرياض</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
+
