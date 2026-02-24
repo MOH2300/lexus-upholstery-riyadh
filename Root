@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# توجيه جوجل لقراءة ملف الأرشفة الجديد فوراً
+Sitemap: https://moh2300.github.io/lexus-upholstery-riyadh/sitemap.xml
+
