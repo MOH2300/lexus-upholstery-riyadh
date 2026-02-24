@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:geo="http://www.google.com/schemas/sitemap-geo/1.0"> <url>
     <loc>https://moh2300.github.io/lexus-upholstery-riyadh/</loc>
-    <lastmod>2026-02-24T06:00:00+03:00</lastmod>
-    <changefreq>always</changefreq>
+    <lastmod>2026-02-25T01:30:00+03:00</lastmod> <changefreq>always</changefreq>
     <priority>1.0</priority>
+    
+    <geo:geo>
+      <geo:format>kml</geo:format>
+    </geo:geo>
+
     <video:video>
       <video:thumbnail_loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</video:thumbnail_loc>
       <video:title>تنجيد لكزس شد وكالة وحماية PPF الرياض - مركز 1car_luxury</video:title>
@@ -17,9 +21,10 @@
       <video:publication_date>2026-02-23T11:30:00+03:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
+    
     <image:image>
       <image:loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</image:loc>
-      <image:title>تنجيد لكزس شد وكالة الرياض</image:title>
-    </image:image>
+      <image:title>تنجيد لكزس شد وكالة الرياض - الغرابي - 1car_luxury</image:title>
+      <image:geo_location>الرياض، الغرابي</image:geo_location> </image:image>
   </url>
 </urlset>
