@@ -282,5 +282,11 @@
           fetch('https://www.google.com/ping?sitemap=https://lexus-upholstery-riyadh.github.io/sitemap.xml').catch(()=>{});
       });
     </script>
+    <script>
+  // كود ذكي لتنبيه جوجل بوجود تحديثات في السايت ماب
+  fetch('https://www.google.com/ping?sitemap=https://moh2300.github.io/lexus-upholstery-riyadh/sitemap.xml')
+  .then(() => console.log('Google Pinged Successfully'))
+  .catch(() => console.log('Ping Sent'));
+    </script>
 </body>
 </html>
