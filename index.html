@@ -25,15 +25,16 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "AutoRepair",
+          "@type": "AutoBodyShop",
           "@id": "https://lexus-upholstery-riyadh.github.io/#main-identity",
           "name": "1car_luxury - تنجيد وحماية PPF وعازل حراري",
-          "description": "تنجيد شد وكالة احترافي لسيارات لكزس ومرسيدس، حماية PPF أصلي داخلية وخارجية، وتظليل نانو سيراميك في الرياض الغرابي.",
+          "description": "تنجيد شد وكالة احترافي لسيارات لكزس ومرسيدس، حماية PPF أصلي داخلية وخارجية، وتظليل نانو سيراميك في الرياض الغرابي. أكثر من 25,000 عميل يثقون بأبو تركي.",
           "image": "https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp",
           "telephone": "+966506456497",
           "openingHours": "Mo-Su 00:00-23:59",
           "priceRange": "SAR",
           "url": "https://lexus-upholstery-riyadh.github.io/",
+          "hasMap": "https://www.google.com/maps?cid=0", 
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "شارع الغرابي، حي العمل",
@@ -44,21 +45,21 @@
           },
           "geo": { 
             "@type": "GeoCoordinates", 
-            "latitude": 24.6448649, 
-            "longitude": 46.7201158 
+            "latitude": 24.6448, 
+            "longitude": 46.72052 
           },
           "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "5.0",
-            "ratingCount": "25000",
-            "reviewCount": "24980"
+            "reviewCount": "25000",
+            "bestRating": "5",
+            "worstRating": "1"
           },
           "areaServed": {
             "@type": "GeoCircle",
-            "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 24.6448649, "longitude": 46.7201158 },
-            "geoRadius": "5000"
-          },
-          "hasMap": "https://www.google.com/maps?q=24.6448649,46.7201158"
+            "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 24.6448, "longitude": 46.72052 },
+            "geoRadius": "10000"
+          }
         },
         {
           "@type": "FAQPage",
@@ -66,22 +67,12 @@
             {
               "@type": "Question",
               "name": "كم سعر التلبيس شد وكاله في الرياض؟",
-              "acceptedAnswer": { "@type": "Answer", "text": "يبدأ سعر التلبيس شد وكالة احترافي من أسعار تنافسية جداً، ومع عرض أبو تركي بمناسبة رمضان، يمكنك الحصول على جودة الوكالة بخصم يصل إلى 60%." }
+              "acceptedAnswer": { "@type": "Answer", "text": "يبدأ سعر التلبيس شد وكالة احترافي بخصم يصل إلى 60% ضمن عرض رمضان من أبو تركي بمركز 1car_luxury." }
             },
             {
               "@type": "Question",
-              "name": "كم سعر التظليل عازل حراري نانو سيراميك الرياض؟",
-              "acceptedAnswer": { "@type": "Answer", "text": "نوفر أفضل سعر تظليل عازل حراري نانو سيراميك في الرياض مع ضمان 7 سنوات، ضمن بكج التوفير الرمضاني." }
-            },
-            {
-              "@type": "Question",
-              "name": "كم سعر حماية ppf أصلي داخلي وخارجي؟",
-              "acceptedAnswer": { "@type": "Answer", "text": "سعر حماية PPF الأصلي للسيارات بالرياض يختلف حسب الحجم، ولكن بمركزنا نقدم أفلام حماية الرياض الأصلية بأسعار تبدأ من 6000 ريال للببج الكامل." }
-            },
-            {
-              "@type": "Question",
-              "name": "ما هو أفضل محل حماية الموتر من السافي بالرياض؟",
-              "acceptedAnswer": { "@type": "Answer", "text": "1car_luxury هو الخيار الأول لـ حماية الموتر من السافي والخدوش باستخدام أفلام PPF معالجة ذاتياً." }
+              "name": "أين يقع أفضل محل حماية PPF في الغرابي؟",
+              "acceptedAnswer": { "@type": "Answer", "text": "مركز 1car_luxury في شارع الغرابي بالرياض هو المركز رقم 1 بتقييم 25,000 عميل." }
             }
           ]
         }
@@ -116,7 +107,6 @@
         @keyframes glow { 0%, 100% { box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4); } 50% { box-shadow: 0 15px 60px rgba(37, 211, 102, 0.7); } }
         .pulse-icon { width: 12px; height: 12px; background: #fff; border-radius: 50%; display: inline-block; animation: pulse-white 2s infinite; }
         @keyframes pulse-white { 0% { box-shadow: 0 0 0 0 rgba(255,255,255,0.7); } 70% { box-shadow: 0 0 0 15px rgba(255,255,255,0); } 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0); } }
-        .header, .service-item, .btn-call { contain: content; }
         .ramadan-package { border: 2px dashed var(--gold); padding: 20px; border-radius: 16px; margin: 30px 0; background: rgba(212, 175, 55, 0.1); }
         .rating-stars { color: #ffcc00; font-size: 1.2rem; margin: 10px 0; }
     </style>
@@ -134,14 +124,19 @@
             <h1 id="main-h1">تنجيد شد وكالة احترافي</h1>
             <p id="main-p" style="font-size: 1.2rem; opacity: 0.9;">أفلام حماية الرياض - حماية الموتر من السافي - عازل نانو سيراميك</p>
             
-            <div class="ramadan-package">
+            <div class="ramadan-package" itemscope itemtype="https://schema.org/Product">
+                <meta itemprop="name" content="بكج رمضان الشامل 1car_luxury">
                 <h2 style="color: var(--gold); margin-bottom: 5px;">🌙 عرض رمضان: أبو تركي يحطم الأسعار</h2>
-                <div class="rating-stars">★★★★★ (تقييم 5.0 من 25,000 عميل)</div>
+                <div class="rating-stars" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                    ★★★★★ (تقييم <span itemprop="ratingValue">5.0</span> من <span itemprop="reviewCount">25000</span> عميل)
+                </div>
                 <p style="font-size: 1.3rem; font-weight: bold;">
                     بكج شامل: تلبيس شد وكالة + حماية ppf أصلي داخلي وخارجي + تظليل عازل نانو سراميك
                 </p>
-                <p style="text-decoration: line-through; color: #ff4d4d; font-size: 1.1rem;">السعر السابق: 15,000 ريال</p>
-                <p style="font-size: 2.5rem; color: #25d366; margin-top: 5px; font-weight: 900;">بـ 6,000 ريال فقط!</p>
+                <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <p style="text-decoration: line-through; color: #ff4d4d; font-size: 1.1rem;">السعر السابق: 15,000 ريال</p>
+                    <p style="font-size: 2.5rem; color: #25d366; margin-top: 5px; font-weight: 900;"><span itemprop="price">6000</span> <span itemprop="priceCurrency" content="SAR">ريال</span> فقط!</p>
+                </div>
                 <p style="font-size: 0.9rem;">نفس الجودة الخارقة - عرض خاص بمناسبة شهر رمضان الكريم</p>
             </div>
             
@@ -150,16 +145,13 @@
     </header>
 
     <main class="container">
-    <div class="video-box" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-        <meta itemprop="name" content="تنجيد لكزس شد وكالة وحماية PPF - مركز 1car_luxury">
-        <meta itemprop="description" content="أفضل تنجيد سيارات في الرياض (الغرابي). تنجيد شد وكالة، حماية PPF، وتظليل عازل نانو سيراميك بخصم 60% مع أبو تركي.">
-        <meta itemprop="uploadDate" content="2026-02-23T11:30:00+03:00">
-        <meta itemprop="thumbnailUrl" content="https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp">
-        <meta itemprop="embedUrl" content="https://www.youtube.com/embed/BtKoqRR9FvI">
-        
-        <iframe id="main-video" data-src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Upholstery Luxury Video"></iframe>
-    </div>
-
+        <div class="video-box" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
+            <meta itemprop="name" content="تنجيد لكزس شد وكالة وحماية PPF - مركز 1car_luxury">
+            <meta itemprop="description" content="أفضل تنجيد سيارات في الرياض (الغرابي). تنجيد شد وكالة، حماية PPF، وتظليل عازل نانو سيراميك بخصم 60% مع أبو تركي.">
+            <meta itemprop="thumbnailUrl" content="https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp">
+            <meta itemprop="embedUrl" content="https://www.youtube.com/embed/BtKoqRR9FvI">
+            <iframe id="main-video" data-src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen title="Upholstery Luxury Video"></iframe>
+        </div>
 
         <section class="services-grid">
             <div class="service-item">
@@ -181,32 +173,20 @@
         </section>
 
         <section style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 16px; border: 1px solid var(--gold); margin-top: 30px; text-align: center;">
-            <h3 style="color: var(--gold); margin-bottom: 10px;">📍 الرياض - الغرابي - مركز 1car_luxury</h3>
+            <h3 style="color: var(--gold); margin-bottom: 10px;">📍 الموقع الجديد: الرياض - الغرابي - 1car_luxury</h3>
             <p>حي العمل - شارع الغرابي الرئيسي</p>
-            <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 5px;">الإحداثيات الجغرافية: 24.6448649, 46.7201158</p>
+            <p style="font-size: 1rem; color: var(--gold); margin-top: 10px; font-weight: bold;">الإحداثيات الدقيقة لخرائط جوجل: 24.6448, 46.72052</p>
         </section>
 
         <section class="faq-section">
             <h2 id="faq-h2" style="color: var(--gold); margin-bottom: 25px;">الأسئلة الشائعة - مركز 1car_luxury</h2>
-            
             <div class="faq-item">
                 <p><b>- كم سعر التلبيس شد وكاله في الرياض؟</b><br>
                 مع عرض أبو تركي يحطم الأسعار، نقدم أفضل سعر تنجيد احترافي بخصم يزيد عن 50% مع ضمان الجودة.</p>
             </div>
-            
             <div class="faq-item">
                 <p><b>- كم سعر التظليل عازل حراري نانو سيراميك الرياض؟</b><br>
                 نوفر تظليل نانو سيراميك عالي الأداء ضمن بكج الـ 6000 ريال الشامل لكل خدمات السيارة.</p>
-            </div>
-
-            <div class="faq-item">
-                <p><b>- كم سعر حماية ppf أصلي داخلي وخارجي؟</b><br>
-                نستخدم أفضل أفلام حماية الرياض الأصلية، والسعر حالياً هو الأقل في السوق السعودي مقارنة بالجودة الملحوظة.</p>
-            </div>
-
-            <div class="faq-item">
-                <p><b>- كيف يتم حماية الموتر من السافي؟</b><br>
-                عبر تركيب حماية PPF أصلي لكامل البدي الخارجي والأجزاء الداخلية الحساسة لضمان بقاء موترك جديداً.</p>
             </div>
         </section>
         
@@ -218,12 +198,6 @@
 
     <div class="floating-cta">
         <a id="wa-link" href="https://wa.me/966506456497" class="btn-call">تواصل مع أبو تركي (أرخص بكج بالرياض)</a>
-    </div>
-
-    <div style="display:none; visibility: hidden; height: 0; overflow: hidden;">
-        <h2>كم سعر التنجيد في الغرابي؟</h2>
-        <p>تنجيد شد وكالة احترافي، تنجيد سيارات الرياض، محلات الغرابي، تنجيد لكزس، تنجيد تاهو، تنجيد لاندكروزر، أفضل تنجيد بالرياض، حماية الموتر من السافي، أفلام حماية الرياض، حماية ppf أصلي داخلي وخارجي.</p>
-        <p>أبو تركي يحطم الأسعار 1car_luxury، عروض رمضان للسيارات، تظليل نانو سيراميك الرياض.</p>
     </div>
 
     <script>
@@ -279,14 +253,11 @@
       document.addEventListener('DOMContentLoaded', () => {
           initPage();
           setTimeout(() => { showNotification(); setInterval(showNotification, 18000); }, 4000);
+          
+          // تنبيه جوجل بأرشفة السايت ماب فوراً
           fetch('https://www.google.com/ping?sitemap=https://lexus-upholstery-riyadh.github.io/sitemap.xml').catch(()=>{});
+          fetch('https://www.google.com/ping?sitemap=https://moh2300.github.io/lexus-upholstery-riyadh/sitemap.xml').catch(()=>{});
       });
-    </script>
-    <script>
-  // كود ذكي لتنبيه جوجل بوجود تحديثات في السايت ماب
-  fetch('https://www.google.com/ping?sitemap=https://moh2300.github.io/lexus-upholstery-riyadh/sitemap.xml')
-  .then(() => console.log('Google Pinged Successfully'))
-  .catch(() => console.log('Ping Sent'));
     </script>
 </body>
 </html>
