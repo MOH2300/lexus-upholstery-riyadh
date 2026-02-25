@@ -21,64 +21,80 @@
     </script>
 
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Product",
+      "@id": "https://lexus-upholstery-riyadh.github.io/#main-product",
+      "name": "1car_luxury - تنجيد وحماية PPF وعازل حراري",
+      "description": "تنجيد شد وكالة احترافي لسيارات لكزس ومرسيدس، حماية PPF أصلي داخلية وخارجية، وتظليل نانو سيراميك في الرياض الغرابي. أكثر من 25,000 عميل يثقون بأبو تركي.",
+      "image": "https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp",
+      "brand": { "@type": "Brand", "name": "1car_luxury" },
+      "sku": "RAMADAN-2026",
+      "offers": {
+        "@type": "Offer",
+        "url": "https://lexus-upholstery-riyadh.github.io/",
+        "priceCurrency": "SAR",
+        "price": "6000",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "25000",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "AutoBodyShop",
+      "@id": "https://lexus-upholstery-riyadh.github.io/#main-identity",
+      "name": "1car_luxury - أبو تركي",
+      "telephone": "+966506456497",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع الغرابي، حي العمل",
+        "addressLocality": "الرياض",
+        "addressRegion": "منطقة الرياض",
+        "postalCode": "12643",
+        "addressCountry": "SA"
+      },
+      "geo": { 
+        "@type": "GeoCoordinates", 
+        "latitude": 24.6448, 
+        "longitude": 46.72052 
+      },
+      "openingHours": "Mo-Su 00:00-23:59"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "تنجيد لكزس شد وكالة وحماية PPF - مركز 1car_luxury",
+      "description": "أفضل تنجيد سيارات في الرياض (الغرابي). تنجيد شد وكالة، حماية PPF، وتظليل عازل نانو سيراميك بخصم 60% مع أبو تركي.",
+      "thumbnailUrl": "https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp",
+      "uploadDate": "2026-02-25T12:00:00+03:00",
+      "embedUrl": "https://www.youtube.com/embed/BtKoqRR9FvI"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "AutoBodyShop",
-          "@id": "https://lexus-upholstery-riyadh.github.io/#main-identity",
-          "name": "1car_luxury - تنجيد وحماية PPF وعازل حراري",
-          "description": "تنجيد شد وكالة احترافي لسيارات لكزس ومرسيدس، حماية PPF أصلي داخلية وخارجية، وتظليل نانو سيراميك في الرياض الغرابي. أكثر من 25,000 عميل يثقون بأبو تركي.",
-          "image": "https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp",
-          "telephone": "+966506456497",
-          "openingHours": "Mo-Su 00:00-23:59",
-          "priceRange": "SAR",
-          "url": "https://lexus-upholstery-riyadh.github.io/",
-          "hasMap": "https://www.google.com/maps?cid=0", 
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "شارع الغرابي، حي العمل",
-            "addressLocality": "الرياض",
-            "addressRegion": "منطقة الرياض",
-            "postalCode": "12643",
-            "addressCountry": "SA"
-          },
-          "geo": { 
-            "@type": "GeoCoordinates", 
-            "latitude": 24.6448, 
-            "longitude": 46.72052 
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "25000",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 24.6448, "longitude": 46.72052 },
-            "geoRadius": "10000"
-          }
+          "@type": "Question",
+          "name": "كم سعر التلبيس شد وكاله في الرياض؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "يبدأ سعر التلبيس شد وكالة احترافي بخصم يصل إلى 60% ضمن عرض رمضان من أبو تركي بمركز 1car_luxury." }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "كم سعر التلبيس شد وكاله في الرياض؟",
-              "acceptedAnswer": { "@type": "Answer", "text": "يبدأ سعر التلبيس شد وكالة احترافي بخصم يصل إلى 60% ضمن عرض رمضان من أبو تركي بمركز 1car_luxury." }
-            },
-            {
-              "@type": "Question",
-              "name": "أين يقع أفضل محل حماية PPF في الغرابي؟",
-              "acceptedAnswer": { "@type": "Answer", "text": "مركز 1car_luxury في شارع الغرابي بالرياض هو المركز رقم 1 بتقييم 25,000 عميل." }
-            }
-          ]
+          "@type": "Question",
+          "name": "أين يقع أفضل محل حماية PPF في الغرابي؟",
+          "acceptedAnswer": { "@type": "Answer", "text": "مركز 1car_luxury في شارع الغرابي بالرياض هو المركز رقم 1 بتقييم 25,000 عميل." }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
+
 
     <style>
         @font-face { font-family: 'Segoe UI'; font-display: swap; }
