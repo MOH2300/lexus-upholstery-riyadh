@@ -6,18 +6,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="canonical" href="https://lexus-upholstery-riyadh.github.io/" />
     
-    <title id="dynamic-title">1car_luxury | تنجيد شد وكالة الغرابي وحماية PPF الرياض</title>
+    <title id="dynamic-title">1car_luxury | إمبراطورية تنجيد شد وكالة الغرابي وحماية PPF الرياض 2026</title>
     
     <script type="application/ld+json" id="seo-schema">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "CarRepair",
-          "name": "1car_luxury - إمبراطورية الغرابي",
-          "description": "أفضل محل تنجيد في الغرابي والرياض، متخصصون في تنجيد شد وكالة، حماية PPF، وتظليل نانو سيراميك.",
-          "address": { "@type": "PostalAddress", "addressLocality": "الغرابي", "addressRegion": "الرياض", "addressCountry": "SA" },
-          "priceRange": "6000 SAR"
+          "@type": "AutoBodyShop",
+          "@id": "https://lexus-upholstery-riyadh.github.io/#main-center",
+          "name": "1car_luxury - إمبراطورية تنجيد وحماية سيارات الرياض 2026",
+          "description": "المركز الأول المعتمد لخدمات حماية PPF، تنجيد شد وكالة، تظليل عازل حراري نانو سيراميك، وعازل أرضيات لجميع الموديلات 2005-2026 في الرياض والغرابي.",
+          "url": "https://lexus-upholstery-riyadh.github.io/",
+          "telephone": "+966506456497",
+          "priceRange": "SAR",
+          "image": "https://lexus-upholstery-riyadh.github.io/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "حي الغرابي، شارع الزينة",
+            "addressLocality": "Riyadh",
+            "addressRegion": "Riyadh Province",
+            "addressCountry": "SA"
+          },
+          "keywords": "تنجيد الرياض، تظليل الغرابي، حماية PPF، تنجيد وكالة، شد بلد، السماعيل، الإمبراطور، الفهيد، وضاح، المميز، تقنية المركبة، تنجيد لكزس، مرسيدس، بي ام دبليو، رنج روفر، بورش، اودي، بنتلي، رولز رويس، تايوتا، نيسان، فورد، جيب، جمس، كاديلاك، تسلا، لوسيد",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "45000"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "حلول أعطال ديكورات السيارات (Technical Fixes)",
+          "description": "إصلاح تقشر جلد طارة لكزس LX600، تفتت إسفنج لاندكروزر 300، تشقق طبلون باترول، واهتراء ديكورات مرسيدس G-Class بدقة الليزر."
         },
         {
           "@type": "FAQPage",
@@ -35,28 +56,41 @@
             --transition-smooth: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; cursor: none !important; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', serif; background-color: var(--bg-deep); color: #f0f0f0; overflow-x: hidden; line-height: 1.6; }
 
-        canvas#bg-canvas { position: fixed; top: 0; left: 0; z-index: -2; pointer-events: none; }
-        .hero-section { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+        /* الهيدر السينمائي الكامل */
+        .hero-section { height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
         .video-bg-wrapper { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; filter: brightness(0.35) contrast(1.1); }
         .video-bg-wrapper iframe { width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-        .hero-content { text-align: center; padding: 20px; z-index: 10; }
-        .hero-title { font-size: clamp(2rem, 6vw, 4rem); font-weight: 200; background: linear-gradient(to bottom, #ffffff 30%, var(--primary-gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .hero-content { text-align: center; padding: 20px; z-index: 10; width: 100%; }
+        .hero-title { 
+            font-size: clamp(2.5rem, 8vw, 5rem); 
+            font-weight: 800; 
+            background: linear-gradient(to bottom, #ffffff 30%, var(--primary-gold) 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
 
-        /* منطقة الأسئلة الظاهرة */
-        .smart-faq-visible { max-width: 1000px; margin: 60px auto; padding: 40px; border-top: 1px solid rgba(197, 160, 89, 0.3); }
-        .visible-q-item { margin-bottom: 30px; border-right: 3px solid var(--primary-gold); padding-right: 20px; transition: 0.3s; }
-        .visible-q-item:hover { background: var(--glass-gold); transform: scale(1.01); }
-        .visible-q-item h3 { color: var(--primary-gold); font-size: 1.3rem; margin-bottom: 8px; font-weight: 400; }
-        .visible-q-item p { color: #ddd; font-size: 1.1rem; }
+        .full-container { max-width: 1400px; margin: 0 auto; padding: 60px 20px; }
+        .smart-faq-visible { margin: 40px auto; padding: 40px; border-top: 1px solid rgba(197, 160, 89, 0.3); background: rgba(255,255,255,0.02); border-radius: 20px; }
+        .visible-q-item { margin-bottom: 30px; border-right: 4px solid var(--primary-gold); padding-right: 25px; transition: 0.3s; }
+        .visible-q-item h3 { color: var(--primary-gold); font-size: 1.5rem; margin-bottom: 10px; font-weight: 400; }
+        .visible-q-item p { color: #ccc; font-size: 1.1rem; }
 
-        /* الهيكل الخفي (The Ghost SEO Layer) */
+        /* الهيكل الخفي (The Ghost Matrix) */
         #ghost-seo-matrix, #hidden-sitemap-bridge { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
 
-        .cta-button { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 18px 60px; background: rgba(0,0,0,0.8); color: #fff; border: 1px solid var(--primary-gold); z-index: 1000; text-decoration: none; backdrop-filter: blur(10px); transition: 0.5s; }
-        .cta-active { animation: pulse-gold 1.5s infinite; background: var(--primary-gold); color: #000; font-weight: bold; }
+        .cta-button { 
+            position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); 
+            padding: 20px 80px; background: var(--primary-gold); color: #000; 
+            font-weight: bold; font-size: 1.3rem; z-index: 1000; text-decoration: none; 
+            border-radius: 50px; box-shadow: 0 10px 30px rgba(197, 160, 89, 0.4);
+            transition: var(--transition-smooth); backdrop-filter: blur(10px);
+        }
+        .cta-active { animation: pulse-gold 1.5s infinite; }
         @keyframes pulse-gold { 0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(197, 160, 89, 0); } 100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); } }
         #cursor { width: 35px; height: 35px; border: 1px solid var(--primary-gold); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999; transition: transform 0.1s ease-out; transform: translate(-50%, -50%); }
     </style>
@@ -65,85 +99,84 @@
 
 <div id="cursor"></div>
 
-<div id="ghost-seo-matrix"></div>
-<div id="hidden-sitemap-bridge"></div>
-
 <header class="hero-section">
     <div class="video-bg-wrapper">
         <iframe id="hero-video" src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1&controls=0&loop=1&playlist=BtKoqRR9FvI&enablejsapi=1" frameborder="0"></iframe>
     </div>
     <div class="hero-content">
-        <span style="color: var(--primary-gold); letter-spacing: 5px;">EST. 2005 - RIYADH</span>
-        <h1 class="hero-title" id="main-h1">نصمم فخامة سيارتك <br>بمعايير دبلوماسية</h1>
+        <span style="color: var(--primary-gold); letter-spacing: 5px; font-weight: bold;">EST. 2005 - RIYADH</span>
+        <h1 class="hero-title">1car_luxury<br>ذكاء الأرشفة المليونية</h1>
+        <p style="font-size: 1.5rem; color: #ddd; max-width: 800px; margin: 0 auto;">نظام 2026 للسيطرة على محركات البحث بخصم 50%</p>
         <button onclick="enableSound()" style="background:none; border:none; color:var(--primary-gold); cursor:pointer; text-decoration:underline; margin-top:20px;">تفعيل الصوت المحيطي</button>
     </div>
 </header>
 
-<main>
-    <section class="smart-faq-visible">
-        <h2 style="text-align:center; font-weight: 200; margin-bottom: 50px; color: var(--primary-gold);">دليل الفخامة في الغرابي</h2>
-        <div id="consumer-faq"></div>
+<main class="full-container">
+    <section class="smart-faq-visible" id="consumer-faq">
+        <h2 style="text-align:center; font-weight: 200; margin-bottom: 50px; color: var(--primary-gold); font-size: 2.5rem;">دليل الفخامة وحلول الأعطال التقنية</h2>
     </section>
-    <div id="services-area" style="display:none;"></div> 
 </main>
 
-<a href="https://wa.me/966506456497" class="cta-button" id="main-cta">تنسيق موعد خاص</a>
+<a href="https://wa.me/966506456497" class="cta-button cta-active" id="main-cta">تحدث مع الخبير - خصم 50%</a>
 
-<script id="ai-crawler-engine">
+<div id="ghost-seo-matrix"></div>
+<div id="hidden-sitemap-bridge"></div>
+
+<script id="ai-smart-kernel">
     const NeuralConfig = {
-        cloudSource: 'seo-cloud.json',
-        riyadhZones: ["الياسمين", "الصحافة", "الملقا", "النرجس", "حطين", "الغرابي", "السويدي", "الشفاء", "نمار", "لبن"],
-        intentKeywords: ["تنجيد شد وكالة", "حماية PPF ملكية", "عازل نانو سيراميك", "تلبيس جلد نابا", "تظليل عازل حراري"]
+        riyadhZones: ["الياسمين", "الصحافة", "الملقا", "النرجس", "حطين", "الغرابي", "السويدي", "الشفاء", "نمار", "لبن", "العزيزية", "الدرعية", "العليا", "النزهة"],
+        carFleet: ["لكزس LX600", "لكزس LS500", "مرسيدس S-Class", "مرسيدس G63", "لاندكروزر 300", "باترول 2025", "يوكن دينالي", "رولز رويس", "بنتلي", "تسلا", "لوسيد", "كاديلاك إسكاليد"],
+        intentKeywords: ["تنجيد شد وكالة", "حماية PPF نانو سيراميك", "عازل حراري", "ترميم جلد الطارة", "تجديد طبلون", "تلميع ساطع"],
+        competitors: ["السماعيل", "الإمبراطور", "الفهيد", "وضاح", "المميز", "تقنية المركبة", "الكعبي"]
     };
 
-    const cars = ["لكزس LS", "لكزس LX", "لاندكروزر", "نيسان باترول", "مرسيدس S-Class", "بي ام دبليو", "تاهو", "يوكن", "جيب لكزس", "كامري"];
-    const keywords = ["تنجيد شد وكالة الرياض", "أفضل محل في الغرابي", "تظليل عازل حراري", "حماية PPF أصلية", "تلبيس مخمل", "نانو سيراميك"];
-    const competitors = ["السماعيل", "المدير", "الإبداع", "المتخصص", "الثلاثة"];
-
     const visibleFaq = [
-        {q: "كم وقت يستغرق تنجيد شد الوكالة للموتر كامل؟", a: "لضمان الدقة المتناهية، يستغرق العمل من 3 إلى 4 أيام كحد أقصى، حيث نلتزم بمعايير المصنع في الشد الحراري."},
-        {q: "أفضل محل تنجيد وزينة سيارات في الغرابي؟", a: "يعتبر مركز 1car_luxury الوجهة الأولى للباحثين عن الاحترافية في الغرابي، حيث نجمع بين جودة الوكالة والسعر العادل."},
-        {q: "هل يمكن الحصول على عمل احترافي بأسعار معقولة؟", a: "نعم، الغرابي هو أكبر تجمع لزينة السيارات في الشرق الأوسط، ونحن نضمن لك توازن المعادلة: جودة VIP وسعر منافس."},
-        {q: "هل التنجيد شد وكالة وهل يوجد ضمان؟", a: "بالتأكيد، نحن خبراء في تنجيد شد الوكالة بضمان يصل إلى 7 سنوات على الجلود الألمانية والأمريكية (حسب الطلب)."},
-        {q: "هل تتأثر كهرباء السيارة ونظام التبريد عند الفك؟", a: "نحن الوحيدون في الغرابي المتخصصون في تنجيد لكزس وجميع السيارات الفاخرة التي تحتوي على أنظمة تبريد، دون المساس بالكهرباء أو الوكالة."},
-        {q: "ما هي أوقات الدوام؟", a: "نستقبلكم في الغرابي من الساعة 8 صباحاً حتى 11 مساءً لخدمتكم."}
+        {q: "كم وقت يستغرق تنجيد شد الوكالة للموتر كامل؟", a: "يستغرق العمل من 3 إلى 4 أيام بحد أقصى لضمان الدقة المتناهية ومطابقة معايير المصنع في الشد الحراري."},
+        {q: "كيف تحلون مشكلة تقشر جلد طارة لكزس LX600 و LS500؟", a: "لدينا مختبر خاص لترميم الجلود الأصلية وإعادتها لحالة الوكالة بملمس وجودة المصنع دون تغيير القطعة."},
+        {q: "هل تتأثر كهرباء السيارة ونظام تبريد المراتب عند الفك؟", a: "نحن متخصصون في السيارات الفاخرة؛ نضمن سلامة أنظمة التبريد والحساسات والكهرباء 100% دون المساس بضمان الوكالة."},
+        {q: "أفضل محل تنجيد وزينة سيارات في الغرابي؟", a: "مركز 1car_luxury يتفوق على محلات الغرابي التقليدية باستيراد جلود ألمانية أصلية واستخدام خياطة ليزر مجهرية."},
+        {q: "هل حماية الـ PPF لديكم تحمي من السافي والخدوش؟", a: "نعم، نستخدم أفلام PPF نانو سيراميك عالية السماكة بخاصية المعالجة الذاتية (Self-Healing) لمقاومة أجواء الرياض القاسية."}
     ];
 
-    async function bootNeuralIndexer() {
+    // 1. محرك الأرشفة والحل الذكي (AI Solver)
+    async function solveRepositoryIssues() {
+        const engines = [
+            `https://www.google.com/ping?sitemap=${window.location.origin}/sitemap.xml`,
+            `https://www.bing.com/ping?sitemap=${window.location.origin}/sitemap.xml`
+        ];
+        engines.forEach(url => fetch(url, { mode: 'no-cors' }).catch(() => {}));
+        
+        const sitemapLink = document.createElement('link');
+        sitemapLink.rel = 'sitemap';
+        sitemapLink.type = 'application/xml';
+        sitemapLink.href = '/sitemap.xml';
+        document.head.appendChild(sitemapLink);
+    }
+
+    // 2. محرك توليد الروابط المليونية (Dynamic Hyper-Matrix)
+    function bootNeuralIndexer() {
         const matrix = document.getElementById('ghost-seo-matrix');
         const bridge = document.getElementById('hidden-sitemap-bridge');
-        const fragment = document.createDocumentFragment();
-        const linkFragment = document.createDocumentFragment();
+        let htmlBuffer = "";
+        let linkBuffer = "";
 
-        try {
-            const response = await fetch(NeuralConfig.cloudSource).catch(() => null);
-            const cloudData = response ? await response.json() : null;
+        for (let i = 0; i < 1000; i++) {
+            const car = NeuralConfig.carFleet[i % NeuralConfig.carFleet.length];
+            const zone = NeuralConfig.riyadhZones[i % NeuralConfig.riyadhZones.length];
+            const intent = NeuralConfig.intentKeywords[i % NeuralConfig.intentKeywords.length];
+            const comp = NeuralConfig.competitors[i % NeuralConfig.competitors.length];
 
-            // توليد 300 كيان معرفي لحظي للعناكب
-            for (let i = 0; i < 300; i++) {
-                const car = cars[i % cars.length];
-                const zone = NeuralConfig.riyadhZones[i % NeuralConfig.riyadhZones.length];
-                const intent = NeuralConfig.intentKeywords[Math.floor(Math.random() * NeuralConfig.intentKeywords.length)];
-                const comp = competitors[i % competitors.length];
-
-                const entity = document.createElement('section');
-                entity.setAttribute('itemscope', '');
-                entity.setAttribute('itemtype', 'https://schema.org/Service');
-                entity.innerHTML = `
-                    <h3 itemprop="name">${intent} لسيارة ${car} في ${zone}</h3>
-                    <p itemprop="description">نقدم ${intent} بمعايير تتخطى ${comp} لخدمة أهالي حي ${zone} بالرياض.</p>
-                `;
-                fragment.appendChild(entity);
-
-                const spiderLink = document.createElement('a');
-                spiderLink.href = `?service=${encodeURIComponent(intent)}&loc=${encodeURIComponent(zone)}&bot_id=${i}`;
-                spiderLink.textContent = `${intent} ${car} ${zone}`;
-                linkFragment.appendChild(spiderLink);
-            }
-            matrix.appendChild(fragment);
-            bridge.appendChild(linkFragment);
-            console.log("🚀 SEO Matrix Injected Successfully");
-        } catch (e) { console.error("SEO Neural Engine Error"); }
+            htmlBuffer += `
+                <section itemscope itemtype="https://schema.org/RepairBusiness">
+                    <h3 itemprop="name">${intent} لسيارة ${car} في حي ${zone}</h3>
+                    <p itemprop="description">نقدم خدمة ${intent} بمعايير تتخطى ${comp} لخدمة عملاء حي ${zone} بالرياض موديلات 2005-2026.</p>
+                    <a itemprop="url" href="/?service=${i}">تفاصيل الخدمة</a>
+                </section>`;
+            
+            linkBuffer += `<a href="/?search=${i}">${intent} ${car} ${zone}</a> `;
+        }
+        matrix.innerHTML = htmlBuffer;
+        bridge.innerHTML = linkBuffer;
     }
 
     function renderUI() {
@@ -160,11 +193,19 @@
 
     window.onload = () => {
         renderUI();
-        setTimeout(bootNeuralIndexer, 1000); // الحقن بعد ثانية لضمان سرعة الصفحة للعميل
-        const cta = document.getElementById('main-cta');
-        setTimeout(() => cta.classList.add('cta-active'), 5000);
+        bootNeuralIndexer();
+        solveRepositoryIssues();
+        
+        // تدوير العناوين لجذب Google Discover
+        setInterval(() => {
+            const titles = ["1car_luxury | تنجيد شد وكالة الرياض", "حماية PPF أصلية - الغرابي", "ترميم طارة لكزس LX600"];
+            document.title = titles[Math.floor(Math.random() * titles.length)];
+        }, 4000);
+
         const cursor = document.getElementById('cursor');
-        document.addEventListener('mousemove', e => { cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`; });
+        document.addEventListener('mousemove', e => { 
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`; 
+        });
     };
 </script>
 </body>
