@@ -2,29 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:geo="http://www.google.com/schemas/sitemap-geo/1.0"> <url>
-    <loc>https://moh2300.github.io/lexus-upholstery-riyadh/</loc>
-    <lastmod>2026-02-25T01:30:00+03:00</lastmod> <changefreq>always</changefreq>
-    <priority>1.0</priority>
-    
-    <geo:geo>
-      <geo:format>kml</geo:format>
-    </geo:geo>
+        xmlns:geo="http://www.google.com/schemas/sitemap-geo/1.0"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <video:video>
-      <video:thumbnail_loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</video:thumbnail_loc>
-      <video:title>تنجيد لكزس شد وكالة وحماية PPF الرياض - مركز 1car_luxury</video:title>
-      <video:description>أقوى عروض تنجيد السيارات وحماية PPF وتظليل نانو سيراميك في الغرابي بالرياض بخصم 60% مع أبو تركي.</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=BtKoqRR9FvI</video:content_loc>
-      <video:player_loc>https://www.youtube.com/embed/BtKoqRR9FvI</video:player_loc>
-      <video:duration>60</video:duration>
-      <video:publication_date>2026-02-23T11:30:00+03:00</video:publication_date>
-      <video:family_friendly>yes</video:family_friendly>
-    </video:video>
-    
-    <image:image>
-      <image:loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</image:loc>
-      <image:title>تنجيد لكزس شد وكالة الرياض - الغرابي - 1car_luxury</image:title>
-      <image:geo_location>الرياض، الغرابي</image:geo_location> </image:image>
-  </url>
+    <url>
+        <loc>https://moh2300.github.io/lexus-upholstery-riyadh/</loc>
+        <lastmod>2026-02-27T08:00:00+03:00</lastmod>
+        <changefreq>always</changefreq>
+        <priority>1.0</priority>
+
+        <geo:geo>
+            <geo:format>kml</geo:format>
+        </geo:geo>
+
+        <video:video>
+            <video:thumbnail_loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</video:thumbnail_loc>
+            <video:title>1car_luxury | إمبراطورية تنجيد لكزس وحماية PPF الرياض 2026</video:title>
+            <video:description>تنجيد شد وكالة وحماية PPF نانو سيراميك لأحدث الموديلات 2005-2026. حلول مشاكل طارة لكزس LX600 في الغرابي، الرياض.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=BtKoqRR9FvI</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&amp;mute=1&amp;rel=0</video:player_loc>
+            <video:duration>60</video:duration>
+            <video:publication_date>2026-02-25T01:30:00+03:00</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:view_count>1000000</video:view_count> <video:tag>تنجيد الرياض</video:tag>
+            <video:tag>حماية PPF الغرابي</video:tag>
+            <video:tag>1car_luxury</video:tag>
+            <video:tag>تنجيد لكزس LX600</video:tag>
+            <video:category>Autos &amp; Vehicles</video:category>
+            <video:live>no</video:live>
+        </video:video>
+
+        <image:image>
+            <image:loc>https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp</image:loc>
+            <image:title>تنجيد وكالة لكزس الرياض 2026 - 1car_luxury</image:title>
+            <image:caption>أقوى مركز تنجيد وحماية PPF في الرياض، الغرابي. متخصصون في السيارات الفارهة والدبلوماسية.</image:caption>
+            <image:geo_location>Riyadh, Saudi Arabia, Al-Gharabi</image:geo_location>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://moh2300.github.io/lexus-upholstery-riyadh/?auto-index=seo-cloud-trigger</loc>
+        <lastmod>2026-02-27T08:00:00+03:00</lastmod>
+        <changefreq>hourly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
