@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="تنجيد الرياض، تظليل الغرابي، حماية PPF، تنجيد وكالة، شد بلد، السماعيل، الإمبراطور، الفهيد، وضاح، المميز، تقنية المركبة، تنجيد لكزس، مرسيدس، بي ام دبليو، رنج روفر، بورش، اودي، بنتلي، رولز رويس، تايوتا، نيسان، فورد، جيب، جمس، كاديلاك، تسلا، لوسيد">
     <meta name="description" content="المركز الأول المعتمد لخدمات حماية PPF، تنجيد شد وكالة، تظليل عازل حراري نانو سيراميك، وعازل أرضيات لجميع الموديلات 2005-2026 في الرياض والغرابي.">
     <link rel="canonical" href="https://moh2300.github.io/lexus-upholstery-riyadh/" />
@@ -39,22 +39,68 @@
 
     <style>
         :root { --gold: #c5a059; --dark: #0a0a0b; --whatsapp: #25D366; --transition: all 0.5s ease; }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
         
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--dark); color: #fff; overflow-x: hidden; line-height: 1.4; }
+        /* تصفير شامل للهوامش لمنع أي فراغات سوداء */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { 
+            width: 100%; 
+            min-height: 100%; 
+            background: var(--dark); 
+            color: #fff; 
+            overflow-x: hidden; 
+            font-family: 'Segoe UI', Tahoma, sans-serif; 
+            line-height: 1.4; 
+        }
 
         .top-nav { position: fixed; top: 0; width: 100%; background: rgba(10,10,11,0.95); border-bottom: 2px solid var(--gold); z-index: 9999; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; backdrop-filter: blur(10px); }
         .top-nav .brand { font-weight: 800; font-size: 1.2rem; color: var(--gold); }
         .top-nav .call-now { background: var(--gold); color: #000; padding: 5px 15px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
 
-        .hero { height: 45vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; margin-top: 50px; }
-        .video-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-        .video-container iframe { width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); filter: brightness(0.4); pointer-events: none; }
+        /* تعديل منطقة الفيديو لمنع الفراغ الأسود تماماً */
+        .hero { 
+            height: 45vh; 
+            width: 100%; 
+            position: relative; 
+            overflow: hidden; 
+            margin-top: 50px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            background: #000;
+        }
         
-        .hero-overlay { position: relative; z-index: 10; text-align: center; padding: 15px; width: 100%; }
-        .hero-overlay h1 { font-size: clamp(1.5rem, 5vw, 3rem); background: linear-gradient(to bottom, #fff, var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; text-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+        .video-container { 
+            position: absolute; 
+            top: 0; left: 0; 
+            width: 100%; height: 100%; 
+            z-index: 1; 
+            pointer-events: none;
+        }
 
-        .full-container { max-width: 1100px; margin: 15px auto 120px; position: relative; z-index: 20; padding: 0 15px; }
+        /* تقنية التغطية الكاملة للفيديو */
+        .video-container iframe { 
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 100vw; 
+            height: 56.25vw; /* نسبة 16:9 */
+            min-height: 100%;
+            min-width: 177.77vh; 
+            transform: translate(-50%, -50%); 
+            filter: brightness(0.4);
+            border: none;
+        }
+
+        .hero-overlay { position: relative; z-index: 10; text-align: center; padding: 15px; width: 100%; }
+        .hero-overlay h1 { font-size: clamp(1.5rem, 5vw, 3rem); background: linear-gradient(to bottom, #fff, var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; text-shadow: 0 5px 15px rgba(0,0,0,0.8); }
+
+        /* الحاوية ثابتة ومنظمة */
+        .full-container { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 20px 15px 140px; 
+            position: relative; 
+            z-index: 20; 
+        }
         
         .main-status-bar { background: rgba(197,160,89,0.1); border: 1px solid var(--gold); padding: 15px; border-radius: 12px; text-align: center; margin-bottom: 20px; backdrop-filter: blur(10px); }
         .main-status-bar h2 { font-size: 1.2rem; color: #fff; }
@@ -64,11 +110,10 @@
         .service-card:hover { border-color: #fff; background: rgba(197,160,89,0.05); transform: translateY(-5px); }
         .service-card h2 { color: var(--gold); font-size: 1.3rem; margin-bottom: 10px; }
 
-        /* منطقة التحويل القصوى */
         .conversion-zone { background: linear-gradient(45deg, #111, #1a1a1a); border: 2px solid var(--gold); padding: 30px; border-radius: 20px; margin-top: 25px; text-align: center; position: relative; overflow: hidden; }
         .conversion-zone::before { content: "متاح الآن"; position: absolute; top: 10px; right: -30px; background: red; color: #fff; padding: 5px 40px; transform: rotate(45deg); font-size: 0.8rem; font-weight: bold; }
 
-        /* أزرار التواصل الثابتة - محرك التحويل */
+        /* أزرار التواصل الثابتة */
         .sticky-contact { position: fixed; bottom: 0; width: 100%; display: flex; z-index: 9999; box-shadow: 0 -10px 30px rgba(0,0,0,0.9); flex-direction: column; }
         .promo-bar { background: var(--gold); color: #000; text-align: center; padding: 5px; font-size: 0.85rem; font-weight: 800; animation: flash 2s infinite; }
         .contact-btns { display: flex; width: 100%; }
@@ -82,6 +127,8 @@
         @keyframes flash { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
         #cursor { width: 20px; height: 20px; border: 1px solid var(--gold); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999; transition: transform 0.1s; transform: translate(-50%, -50%); }
+        
+        /* إبقاء أكواد الأرشفة مخفية بدون حذف */
         #ghost-matrix, #ai-latent-data, #neural-content-factory { position: absolute; left: -9999px; visibility: hidden; }
         
         .badge { background: var(--gold); color: #000; padding: 3px 12px; border-radius: 50px; font-size: 0.75rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
@@ -91,6 +138,7 @@
         @media (max-width: 768px) {
             .hero { height: 35vh; }
             .sticky-contact a { padding: 15px; font-size: 1.1rem; }
+            .video-container iframe { width: 177.77vh; height: 100%; }
         }
     </style>
 </head>
@@ -104,7 +152,7 @@
 
     <header class="hero">
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1&loop=1&playlist=BtKoqRR9FvI&controls=0" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1&loop=1&playlist=BtKoqRR9FvI&controls=0&showinfo=0&rel=0" frameborder="0"></iframe>
         </div>
         <div class="hero-overlay">
             <span class="badge">نظام تحويل العملاء 2026</span>
@@ -212,4 +260,3 @@
     </script>
 </body>
 </html>
-
