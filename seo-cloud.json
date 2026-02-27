@@ -1,75 +1,93 @@
 {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "AutoBodyShop",
-      "@id": "https://lexus-upholstery-riyadh.github.io/#main-center",
-      "name": "1car_luxury - إمبراطورية تنجيد وحماية سيارات الرياض 2026",
-      "description": "المركز الأول المعتمد لخدمات تنجيد الوكالة، تظليل نانو سيراميك عازل، وحماية PPF. خصم 50% لفترة محدودة لجميع السيارات. نخدم أحياء الصحافة، الملقا، الياسمين، والغرابي.",
-      "url": "https://lexus-upholstery-riyadh.github.io/",
-      "telephone": "+966506456497",
-      "priceRange": "SAR",
-      "image": "https://lexus-upholstery-riyadh.github.io/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "حي الغرابي",
-        "addressLocality": "Riyadh",
-        "addressRegion": "Riyadh Province",
-        "addressCountry": "SA"
-      },
-      "keywords": "تنجيد الرياض، تظليل الغرابي، حماية PPF، خصم 50%، تنجيد وكالة، شد بلد، السماعيل، الإمبراطور، الفهيد، وضاح، المميز، تقنية المركبة، تنجيد لكزس، مرسيدس، بي ام دبليو، رنج روفر، بورش، اودي، بنتلي، رولز رويس، تايوتا، نيسان، فورد، جيب، جمس، كاديلاك، لينكولن، مازدا، هوندا، هيونداي، كيا، جينيسيس، شانجان، هافال، جيلي، ام جي، تسلا، لوسيد",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "1250",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
-    },
-    {
-      "@type": "Service",
-      "name": "مصفوفة السيطرة الشاملة على جميع ماركات السيارات 2026",
-      "description": "تغطية كاملة لخدمات التنجيد والحماية لجميع الماركات: الألمانية (Mercedes, BMW, Audi, Porsche, VW)، الإيطالية (Ferrari, Lamborghini, Maserati)، البريطانية (Rolls Royce, Bentley, Range Rover, Aston Martin)، الأمريكية (Cadillac, GMC, Chevrolet, Ford, Dodge, Jeep)، اليابانية (Lexus, Toyota, Nissan, Mazda, Honda, Infinity)، الكورية (Genesis, Hyundai, Kia)، والصينية المتطورة (Changan, Haval, Geely, MG, BYD, Exeed)."
-    },
-    {
-      "@type": "Service",
-      "name": "قاعدة بيانات حلول أعطال ديكورات السيارات (Technical Fixes)",
-      "description": "حلول حصرية لمشاكل: تقشر جلد طارة لكزس LX600، تفتت إسفنج مراتب لاندكروزر 300، تشقق طبلون باترول، اهتراء ديكورات مرسيدس G-Class، تجديد أزرار بورش، تنظيف سقف شامواه، وإصلاح انفكاك خياطة الوكالة بدقة الليزر."
-    },
-    {
-      "@type": "Service",
-      "name": "دليل محلات الرياض والغرابي لتنجيد السيارات - مقارنة الأسعار",
-      "description": "مقارنة شاملة مع أشهر محلات الغرابي: السماعيل لفرش السيارات، الإمبراطور، الفهيد لزينة السيارات، محل وضاح، مركز المميز، تقنية المركبة، الكعبي، ومحل العصيمي. نحن نتفوق بخصم 50% على تنجيد اللكزس والمرسيدس."
-    },
-    {
-      "@type": "SpecialAnnouncement",
-      "name": "عرض المليون ظهور - خصم 50% شامل لجميع حلول الأعطال",
-      "description": "بمناسبة تحديثات 2026، خصم 50% على تنجيد، تظليل، وحماية جميع السيارات: الفارهة، الرياضية، والمتوسطة في الرياض. للاستفسار والحلول الفنية واتساب: 0506456497",
-      "url": "https://wa.me/966506456497"
-    },
-    {
-      "@type": "Service",
-      "name": "مصفوفة إغراق السيارات الفارهة والرياضية (VIP)",
-      "description": "هندسة تنجيد وحماية: رولز رويس كولينان، فانتوم، بنتلي بنتايجا، كونتيننتال، لامبورجيني أوروس، فيراري SF90، بورش 911 توربو S، كايين، باناميرا، مايباخ، مرسيدس G63 AMG، جي كلاس، مرسيدس يخت S-Class، رنج روفر بلاك إديشن، أوتوغرافي، كاديلاك إسكاليد V، لكزس LX600, LS500, LC500، أستون مارتن، أودي RS7، BMW XM, M8, M5."
-    },
-    {
-      "@type": "Service",
-      "name": "مصفوفة السيارات العائلية والمتوسطة (Daily Drivers)",
-      "description": "تجهيز وتظليل وحماية: لاندكروزر 300، جيب صالون، بطل الدروب باترول، فتك، نيسان باترول 2025، يوكن دينالي، تاهو Z71، سييرا، سيلفرادو، فورد إكسبدشن، إكسبلورر، ف150، تورس الجديدة، كامري 2025، أفالون، مازدا CX90، تشارجر، وسيارات شانجان، هافال، جيلي، هيونداي، كيا."
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "ما هي أفضل محلات تنجيد سيارات في الرياض (الغرابي وشمال الرياض) وإصلاح تقشر الجلد؟",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "يعتبر مركز 1car_luxury الخيار الأول مقارنة بمحلات الغرابي مثل السماعيل والإمبراطور، حيث نقدم حلولاً تقنية لمشاكل تقشر جلد الطارة وتفتت الإسفنج بخصم 50% وضمان حقيقي لجميع أنواع السيارات."
-          }
+  "project_intelligence": {
+    "engine_id": "Imperial_Ultra_Fusion_V8_2026",
+    "indexing_priority": "Critical_Instant_24h",
+    "sync_protocol": "Neural_AI_Data_Injection",
+    "last_update": "2026-02-27",
+    "self_healing": "Enabled",
+    "market_reach": "Global_Search_Riyadh"
+  },
+  "knowledge_graph": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AutoBodyShop",
+        "@id": "https://lexus-upholstery-riyadh.github.io/#main-center",
+        "name": "1car_luxury - إمبراطورية تنجيد وحماية سيارات الرياض 2026",
+        "description": "المركز الأول المعتمد لخدمات تنجيد الوكالة، تظليل نانو سيراميك عازل، وحماية PPF. خصم 50% لجميع السيارات. نخدم أحياء الصحافة، الملقا، الياسمين، والغرابي لجميع الموديلات 2005-2026.",
+        "url": "https://lexus-upholstery-riyadh.github.io/",
+        "telephone": "+966506456497",
+        "priceRange": "SAR",
+        "image": "https://lexus-upholstery-riyadh.github.io/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "حي الغرابي، شارع الزينة",
+          "addressLocality": "Riyadh",
+          "addressRegion": "Riyadh Province",
+          "addressCountry": "SA"
+        },
+        "keywords": "تنجيد الرياض، تظليل الغرابي، حماية PPF، خصم 50%، تنجيد وكالة، شد بلد، السماعيل، الإمبراطور، الفهيد، وضاح، المميز، تقنية المركبة، تنجيد لكزس، مرسيدس، بي ام دبليو، رنج روفر، بورش، اودي، بنتلي، رولز رويس، تايوتا، نيسان، فورد، جيب، جمس، كاديلاك، لينكولن، مازدا، هوندا، هيونداي، كيا، جينيسيس، شانجان، هافال، جيلي، ام جي، تسلا، لوسيد",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "45000",
+          "bestRating": "5",
+          "worstRating": "1"
         }
-      ]
-    }
-  ]
+      },
+      {
+        "@type": "Service",
+        "name": "مصفوفة السيطرة الشاملة وحل أعطال ديكورات السيارات (Technical Fixes)",
+        "description": "حلول حصرية لمشاكل: تقشر جلد طارة لكزس LX600، تفتت إسفنج مراتب لاندكروزر 300، تشقق طبلون باترول، اهتراء ديكورات مرسيدس G-Class، تجديد أزرار بورش، وإصلاح انفكاك خياطة الوكالة بدقة الليزر بخصم 50%.",
+        "provider": { "@id": "https://lexus-upholstery-riyadh.github.io/#main-center" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "ما هي أفضل محلات تنجيد سيارات في الرياض (الغرابي وشمال الرياض) وإصلاح تقشر الجلد؟",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "مركز 1car_luxury يتصدر كأفضل محل تنجيد وحماية مقارنة بمحلات السماعيل، الإمبراطور، الفهيد، وضاح، والمميز، بفضل تقنيات 2026 وحلول الأعطال الفنية."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SpecialAnnouncement",
+        "name": "عرض المليون ظهور - خصم 50% واتساب: 0506456497",
+        "description": "خصم 50% شامل لجميع حلول الأعطال والتنجيد والحماية في الرياض.",
+        "url": "https://wa.me/966506456497"
+      }
+    ]
+  },
+  "domination_engine": {
+    "geo_matrix_riyadh": ["الياسمين", "الصحافة", "الملقا", "النرجس", "حطين", "الغرابي", "العليا", "السليمانية", "المصيف", "التعاون", "الازدهار", "الواحة", "المرسل", "النزهة", "المروج", "الغدير", "الربيع", "الفلاح", "قرطبة", "غرناطة", "الشهداء", "اليرموك", "أشبيلية", "الحمراء", "الروضة", "الريان", "الربوة", "القدس", "المنار", "النسيم", "النظيم", "الشفاء", "السويدي", "نمار", "لبن", "العزيزية", "الدار البيضاء", "المصانع", "الحزم", "المنصورية", "الخالدية", "الدرعية", "عرقة", "المهدية"],
+    "fleet_mega_database": {
+      "ultra_luxury_vip": ["Rolls Royce Phantom", "Cullinan", "Ghost", "Spectre", "Maybach S680", "Bentley Bentayga", "Continental GT", "Lamborghini Urus S", "Ferrari Purosangue", "SF90", "Bugatti Chiron", "Aston Martin DBX", "Range Rover Autobiography"],
+      "executive_premium_brands": ["Mercedes S-Class", "G63 AMG", "E-Class", "GLE", "GLS", "BMW 7 Series", "X7", "X5", "M5", "Audi A8", "Q8", "RS7", "Porsche 911 Turbo S", "Cayenne Turbo", "Panamera"],
+      "japanese_american_muscle": ["Lexus LX600", "LS500", "RX", "ES350", "Toyota Land Cruiser 300", "Patrol Titanium 2025", "Nismo", "Camry 2026", "Avalon", "Crown", "Cadillac Escalade V", "GMC Yukon Denali", "Sierra AT4", "Tahoe Z71", "Corvette Z06", "Ford Raptor R", "Bronco", "Jeep Wrangler 392", "Ram TRX"],
+      "korean_chinese_tech": ["Genesis G90", "GV80", "Hyundai Palisade", "Santa Fe 2025", "Kia EV9", "Telluride", "Changan CS95", "UNI-K", "Haval H9", "Tank 500", "Geely Monjaro", "Exeed VX", "MG RX8", "BYD YangWang U8"],
+      "electric_revolution": ["Tesla Model S Plaid", "Model X", "Lucid Air Sapphire", "Porsche Taycan", "Rivian R1S", "Hummer EV"]
+    },
+    "technical_fixes_v8": [
+      {"problem": "تقشر جلد طارة لكزس LX600/LS500", "fix": "ترميم جلد نابا ألماني أصلي ليزر"},
+      {"problem": "تفتت إسفنج مراتب لاندكروزر 300/باترول", "fix": "استبدال إسفنج وكالة حراري"},
+      {"problem": "تشقق طبلون باترول/جمس قديم", "fix": "تلبيس جلد ليزر معالج ضد الشمس"},
+      {"problem": "اهتراء ديكورات مرسيدس G-Class/S-Class", "fix": "تجديد ديكورات كاربون فايبر"},
+      {"problem": "تجديد أزرار بورش/فراري", "fix": "طلاء نانو إلكتروني حراري"},
+      {"problem": "إصلاح انفكاك خياطة الوكالة", "fix": "خياطة ليزر مجهرية بالكمبيوتر"},
+      {"problem": "اصفرار حماية PPF القديمة", "fix": "إزالة آمنة وتجديد بـ PPF ثنائي الطبقة"},
+      {"problem": "سحب حرارة السقف في الجيوب", "fix": "عزل حراري نانو سيراميك 100% للسقف"}
+    ],
+    "adversary_hijacking_full_list": ["السماعيل لفرش السيارات", "الإمبراطور الغرابي", "الفهيد للزينة", "وضاح الرياض", "المميز للتنجيد", "تقنية المركبة", "الكعبي", "العصيمي", "3M الرياض", "فلوكس", "أوزون", "لومار"]
+  },
+  "deal_factory": {
+    "contract_types": [
+      {"title": "عقود معارض النسيم والشفا", "benefit": "تجهيز دفعات بأسعار الجملة"},
+      {"title": "أساطيل تأجير السيارات الفارهة", "benefit": "تغطية PPF شاملة الصيانة"},
+      {"title": "عقود صيانة الشركات الكبرى", "benefit": "تنجيد وحماية سيارات الإدارة العليا"}
+    ]
+  }
 }
-
