@@ -6,19 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="canonical" href="https://lexus-upholstery-riyadh.github.io/" />
     
-    <title id="dynamic-title">أفضل محل تنجيد شد وكالة وحماية PPF وتظليل عازل حراري نانو سيراميك الرياض | 1car_luxury</title>
-    <meta name="description" id="dynamic-desc" content="مركز 1car_luxury الرياض: تنجيد شد وكالة لجميع السيارات، حماية PPF ملكية، تظليل نانو سيراميك، وعزل أرضيات. جودة 2026 بأسعار تنافسية في الغرابي.">
-
-    <script type="application/ld+json" id="dynamic-schema">
+    <title id="dynamic-title">1car_luxury | تنجيد شد وكالة الغرابي وحماية PPF الرياض</title>
+    
+    <script type="application/ld+json" id="seo-schema">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "CarRepair",
-          "name": "1car_luxury - أبو تركي",
-          "image": "https://moh2300.github.io/lexus-upholstery-riyadh/img/L1.webp",
-          "address": { "@type": "PostalAddress", "streetAddress": "الغرابي", "addressLocality": "الرياض", "addressCountry": "SA" },
-          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "25000" }
+          "name": "1car_luxury - إمبراطورية الغرابي",
+          "description": "أفضل محل تنجيد في الغرابي والرياض، متخصصون في تنجيد شد وكالة، حماية PPF، وتظليل نانو سيراميك.",
+          "address": { "@type": "PostalAddress", "addressLocality": "الغرابي", "addressRegion": "الرياض", "addressCountry": "SA" },
+          "priceRange": "6000 SAR"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [] 
         }
       ]
     }
@@ -26,283 +29,143 @@
 
     <style>
         :root {
-            --primary-glow: #d4af37;
-            --secondary-glow: #00f2ff;
-            --bg-dark: #050505;
-            --glass: rgba(255, 255, 255, 0.03);
-            --neon-border: linear-gradient(90deg, #d4af37, #ffffff, #d4af37);
+            --primary-gold: #c5a059;
+            --bg-deep: #0a0a0b;
+            --glass-gold: rgba(197, 160, 89, 0.05);
+            --transition-smooth: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; cursor: none !important; }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: var(--bg-dark); 
-            color: #fff; 
-            overflow-x: hidden;
-            line-height: 1.4;
-        }
+        body { font-family: 'Segoe UI', serif; background-color: var(--bg-deep); color: #f0f0f0; overflow-x: hidden; line-height: 1.6; }
 
-        .bg-animate {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
-            z-index: -1;
-        }
+        canvas#bg-canvas { position: fixed; top: 0; left: 0; z-index: -2; pointer-events: none; }
+        .hero-section { height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; border-bottom: 1px solid rgba(197, 160, 89, 0.2); }
+        .video-bg-wrapper { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; filter: brightness(0.35) contrast(1.1); }
+        .video-bg-wrapper iframe { width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .hero-content { text-align: center; padding: 20px; z-index: 10; }
+        .hero-title { font-size: clamp(2rem, 6vw, 4rem); font-weight: 200; background: linear-gradient(to bottom, #ffffff 30%, var(--primary-gold) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-        .glow-sphere {
-            position: absolute; width: 400px; height: 400px;
-            background: var(--primary-glow); filter: blur(180px);
-            border-radius: 50%; opacity: 0.15;
-            animation: moveGlow 15s infinite alternate;
-        }
+        /* منطقة الأسئلة الظاهرة */
+        .smart-faq-visible { max-width: 1000px; margin: 60px auto; padding: 40px; border-top: 1px solid rgba(197, 160, 89, 0.3); }
+        .visible-q-item { margin-bottom: 30px; border-right: 3px solid var(--primary-gold); padding-right: 20px; transition: 0.3s; }
+        .visible-q-item:hover { background: var(--glass-gold); transform: scale(1.01); }
+        .visible-q-item h3 { color: var(--primary-gold); font-size: 1.3rem; margin-bottom: 8px; font-weight: 400; }
+        .visible-q-item p { color: #ddd; font-size: 1.1rem; }
 
-        @keyframes moveGlow {
-            0% { transform: translate(-10%, -10%); background: var(--primary-glow); }
-            100% { transform: translate(80vw, 80vh); background: var(--secondary-glow); }
-        }
+        /* الهيكل الخفي (The Ghost SEO Layer) */
+        #ghost-seo-matrix, #hidden-sitemap-bridge { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; opacity: 0; }
 
-        header {
-            padding: 80px 20px;
-            text-align: center;
-            background: linear-gradient(180deg, rgba(212,175,55,0.1) 0%, transparent 100%);
-            border-bottom: 1px solid rgba(212,175,55,0.2);
-        }
-
-        .hero-title {
-            font-size: clamp(1.8rem, 5vw, 3.5rem);
-            font-weight: 900;
-            background: linear-gradient(to bottom, #fff 20%, #d4af37 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 10px 30px rgba(212,175,55,0.3);
-            margin-bottom: 20px;
-        }
-
-        .smart-tag {
-            display: inline-block;
-            padding: 8px 20px;
-            border-radius: 50px;
-            background: var(--glass);
-            border: 1px solid var(--primary-glow);
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-            margin: 10px;
-            animation: pulse 2s infinite;
-        }
-
-        .price-shield {
-            margin: 40px auto;
-            width: fit-content;
-            padding: 20px 40px;
-            border-radius: 25px;
-            background: rgba(0,0,0,0.8);
-            border: 2px solid var(--primary-glow);
-            box-shadow: 0 0 50px rgba(212,175,55,0.2);
-        }
-        
-        .price-svg { height: 60px; fill: #25d366; filter: drop-shadow(0 0 10px #25d366); }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            padding: 40px 0;
-        }
-
-        .service-card {
-            background: var(--glass);
-            border: 1px solid rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary-glow);
-        }
-
-        .video-container {
-            width: 100%;
-            border-radius: 30px;
-            overflow: hidden;
-            border: 5px solid var(--glass);
-            margin-bottom: 50px;
-        }
-
-        .smart-faq-visible {
-            background: linear-gradient(135deg, rgba(20,20,20,0.9), rgba(10,10,10,0.9));
-            border-radius: 30px;
-            padding: 40px;
-            border: 1px solid var(--primary-glow);
-            margin: 40px 0;
-        }
-
-        .visible-q-item {
-            margin-bottom: 25px;
-            border-right: 4px solid var(--primary-glow);
-            padding-right: 15px;
-        }
-
-        .visible-q-item h3 { color: #fff; font-size: 1.2rem; margin-bottom: 10px; }
-        .visible-q-item p { color: #ccc; font-size: 1rem; line-height: 1.6; }
-
-        /* منطقة الأرشفة المخفية - لحل مشكلة السايت ماب وجذب العناكب */
-        #hidden-sitemap-bridge {
-            display: none;
-            visibility: hidden;
-            height: 0;
-        }
-
-        #faq-dynamic-container {
-            display: none;
-            visibility: hidden;
-        }
-
-        .cta-button {
-            position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
-            width: 90%; max-width: 500px; background: linear-gradient(45deg, #25d366, #128c7e);
-            color: white; text-align: center; padding: 22px; border-radius: 100px;
-            text-decoration: none; font-weight: 900; font-size: 1.4rem; z-index: 1000;
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.4);
-        }
-
-        #cursor {
-            width: 20px; height: 20px; border: 2px solid var(--primary-glow);
-            border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999;
-            transition: 0.08s; transform: translate(-50%, -50%);
-        }
-
-        @keyframes pulse { 0% { opacity: 0.6; } 50% { opacity: 1; } 100% { opacity: 0.6; } }
-
+        .cta-button { position: fixed; bottom: 40px; left: 50%; transform: translateX(-50%); padding: 18px 60px; background: rgba(0,0,0,0.8); color: #fff; border: 1px solid var(--primary-gold); z-index: 1000; text-decoration: none; backdrop-filter: blur(10px); transition: 0.5s; }
+        .cta-active { animation: pulse-gold 1.5s infinite; background: var(--primary-gold); color: #000; font-weight: bold; }
+        @keyframes pulse-gold { 0% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.7); } 70% { box-shadow: 0 0 0 20px rgba(197, 160, 89, 0); } 100% { box-shadow: 0 0 0 0 rgba(197, 160, 89, 0); } }
+        #cursor { width: 35px; height: 35px; border: 1px solid var(--primary-gold); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999; transition: transform 0.1s ease-out; transform: translate(-50%, -50%); }
     </style>
 </head>
 <body>
 
 <div id="cursor"></div>
-<div class="bg-animate"><div class="glow-sphere"></div></div>
 
-<header>
-    <div class="container">
-        <span class="smart-tag" id="dynamic-tag">إمبراطورية زينة السيارات 2026</span>
-        <h1 class="hero-title" id="main-h1">أفضل محل تنجيد شد وكالة وحماية PPF بالرياض<br>تنجيد شد وكالة لجميع السيارات</h1>
-        
-        <div class="price-shield">
-            <span style="font-size: 1rem; display: block; margin-bottom: 5px; opacity: 0.7;">البكج الملكي (تنجيد + PPF + تظليل + أرضيات)</span>
-            <svg class="price-svg" viewBox="0 0 300 60">
-                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="45" font-weight="bold" fill="white">6000 SAR</text>
-            </svg>
-        </div>
+<div id="ghost-seo-matrix"></div>
+<div id="hidden-sitemap-bridge"></div>
+
+<header class="hero-section">
+    <div class="video-bg-wrapper">
+        <iframe id="hero-video" src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1&controls=0&loop=1&playlist=BtKoqRR9FvI&enablejsapi=1" frameborder="0"></iframe>
+    </div>
+    <div class="hero-content">
+        <span style="color: var(--primary-gold); letter-spacing: 5px;">EST. 2005 - RIYADH</span>
+        <h1 class="hero-title" id="main-h1">نصمم فخامة سيارتك <br>بمعايير دبلوماسية</h1>
+        <button onclick="enableSound()" style="background:none; border:none; color:var(--primary-gold); cursor:pointer; text-decoration:underline; margin-top:20px;">تفعيل الصوت المحيطي</button>
     </div>
 </header>
 
-<main class="container" style="max-width: 1200px; margin: auto; padding: 20px;">
-    <div class="video-container">
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/BtKoqRR9FvI?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
-    </div>
-
+<main>
     <section class="smart-faq-visible">
-        <h2 style="color: var(--primary-glow); margin-bottom: 30px; text-align: center;">إجابات تهمك قبل تشريفنا في المركز</h2>
-        <div id="consumer-faq">
-            </div>
+        <h2 style="text-align:center; font-weight: 200; margin-bottom: 50px; color: var(--primary-gold);">دليل الفخامة في الغرابي</h2>
+        <div id="consumer-faq"></div>
     </section>
-
-    <div class="services-grid" id="services-area">
-        </div>
-
-    <div id="hidden-sitemap-bridge"></div> <div id="faq-dynamic-container"></div>
+    <div id="services-area" style="display:none;"></div> 
 </main>
 
-<a href="https://wa.me/966506456497" class="cta-button">احجز موعدك الآن مع أبو تركي</a>
+<a href="https://wa.me/966506456497" class="cta-button" id="main-cta">تنسيق موعد خاص</a>
 
-<script>
-    // 1. نظام الروابط الديناميكية والذكاء الاصطناعي (40,000 Parameter)
-    const urlParams = new URLSearchParams(window.location.search);
-    const region = urlParams.get('region') || 'الرياض';
-    const model = urlParams.get('model') || 'لجميع السيارات';
-    const competitor = urlParams.get('vs') || '';
+<script id="ai-crawler-engine">
+    const NeuralConfig = {
+        cloudSource: 'seo-cloud.json',
+        riyadhZones: ["الياسمين", "الصحافة", "الملقا", "النرجس", "حطين", "الغرابي", "السويدي", "الشفاء", "نمار", "لبن"],
+        intentKeywords: ["تنجيد شد وكالة", "حماية PPF ملكية", "عازل نانو سيراميك", "تلبيس جلد نابا", "تظليل عازل حراري"]
+    };
 
-    function initDynamicContent() {
-        const h1 = document.getElementById('main-h1');
-        const tag = document.getElementById('dynamic-tag');
-        const title = document.getElementById('dynamic-title');
+    const cars = ["لكزس LS", "لكزس LX", "لاندكروزر", "نيسان باترول", "مرسيدس S-Class", "بي ام دبليو", "تاهو", "يوكن", "جيب لكزس", "كامري"];
+    const keywords = ["تنجيد شد وكالة الرياض", "أفضل محل في الغرابي", "تظليل عازل حراري", "حماية PPF أصلية", "تلبيس مخمل", "نانو سيراميك"];
+    const competitors = ["السماعيل", "المدير", "الإبداع", "المتخصص", "الثلاثة"];
 
-        if(competitor) {
-            h1.innerHTML = `تنجيد شد وكالة وحماية PPF <br> أفضل من ${competitor} في ${region}`;
-            tag.innerText = `لماذا يختار عملاء ${competitor} مركزنا؟`;
-        } else {
-            h1.innerHTML = `تنجيد شد وكالة ${model} <br> في حي ${region} بالرياض`;
-            tag.innerText = `خدمة احترافية لسيارات ${model} في ${region}`;
-        }
-        title.innerText = `تنجيد ${model} شد وكالة - حماية PPF في ${region} | 1car_luxury`;
-    }
-
-    // 2. حل مشكلة الـ Sitemap وجذب العناكب (Neural Sitemap Bridge)
-    function triggerSpider() {
-        const bridge = document.getElementById('hidden-sitemap-bridge');
-        // توليد 100 رابط داخلي وهمي في كل زيارة لجذب العناكب
-        for(let i=0; i<100; i++) {
-            const a = document.createElement('a');
-            a.href = `?region=${region}&model=car_${i}&bot_ping=${Math.random()}`;
-            a.innerText = `link_${i}`;
-            bridge.appendChild(a);
-        }
-        console.log("AI SEO: Sitemap Bridge Activated.");
-    }
-
-    // 3. بروتوكول الأرشفة في أقل من دقيقة
-    function fastIndex() {
-        // تحديث الـ Meta Tags في الذاكرة كل 10 دقائق لإيهام جوجل بالتحديث المستمر
-        setInterval(() => {
-            const time = new Date().getTime();
-            document.querySelector('meta[name="description"]').content += ` [Update_${time}]`;
-            // إرسال "نغمة" برمجية لجوجل (Ping) عبر الروابط الوهمية
-            triggerSpider();
-        }, 600000); // كل 10 دقائق
-    }
-
-    // 4. حقن الأسئلة والخدمات (بدون حذف)
-    const faqData = [
-        {q: "كم يستغرق تنجيد شد الوكالة؟", a: "تستغرق العملية من 24 إلى 48 ساعة لضمان الشد الحراري الدقيق."},
-        {q: "كم وقت تأخذ حماية PPF؟", a: "يومين لضمان جفاف المادة تماماً وتثبيت الأطراف تحت الديكورات."},
-        {q: "متى الدوام يوم الجمعة؟", a: "نستقبلكم يوم الجمعة من بعد صلاة العصر مباشرة بمواعيد مسبقة."},
-        {q: "هل دوام العصر مناسب؟", a: "نعم، العصر مثالي لفحص السيارة في الضوء الطبيعي قبل الاستلام."}
+    const visibleFaq = [
+        {q: "كم وقت يستغرق تنجيد شد الوكالة للموتر كامل؟", a: "لضمان الدقة المتناهية، يستغرق العمل من 3 إلى 4 أيام كحد أقصى، حيث نلتزم بمعايير المصنع في الشد الحراري."},
+        {q: "أفضل محل تنجيد وزينة سيارات في الغرابي؟", a: "يعتبر مركز 1car_luxury الوجهة الأولى للباحثين عن الاحترافية في الغرابي، حيث نجمع بين جودة الوكالة والسعر العادل."},
+        {q: "هل يمكن الحصول على عمل احترافي بأسعار معقولة؟", a: "نعم، الغرابي هو أكبر تجمع لزينة السيارات في الشرق الأوسط، ونحن نضمن لك توازن المعادلة: جودة VIP وسعر منافس."},
+        {q: "هل التنجيد شد وكالة وهل يوجد ضمان؟", a: "بالتأكيد، نحن خبراء في تنجيد شد الوكالة بضمان يصل إلى 7 سنوات على الجلود الألمانية والأمريكية (حسب الطلب)."},
+        {q: "هل تتأثر كهرباء السيارة ونظام التبريد عند الفك؟", a: "نحن الوحيدون في الغرابي المتخصصون في تنجيد لكزس وجميع السيارات الفاخرة التي تحتوي على أنظمة تبريد، دون المساس بالكهرباء أو الوكالة."},
+        {q: "ما هي أوقات الدوام؟", a: "نستقبلكم في الغرابي من الساعة 8 صباحاً حتى 11 مساءً لخدمتكم."}
     ];
+
+    async function bootNeuralIndexer() {
+        const matrix = document.getElementById('ghost-seo-matrix');
+        const bridge = document.getElementById('hidden-sitemap-bridge');
+        const fragment = document.createDocumentFragment();
+        const linkFragment = document.createDocumentFragment();
+
+        try {
+            const response = await fetch(NeuralConfig.cloudSource).catch(() => null);
+            const cloudData = response ? await response.json() : null;
+
+            // توليد 300 كيان معرفي لحظي للعناكب
+            for (let i = 0; i < 300; i++) {
+                const car = cars[i % cars.length];
+                const zone = NeuralConfig.riyadhZones[i % NeuralConfig.riyadhZones.length];
+                const intent = NeuralConfig.intentKeywords[Math.floor(Math.random() * NeuralConfig.intentKeywords.length)];
+                const comp = competitors[i % competitors.length];
+
+                const entity = document.createElement('section');
+                entity.setAttribute('itemscope', '');
+                entity.setAttribute('itemtype', 'https://schema.org/Service');
+                entity.innerHTML = `
+                    <h3 itemprop="name">${intent} لسيارة ${car} في ${zone}</h3>
+                    <p itemprop="description">نقدم ${intent} بمعايير تتخطى ${comp} لخدمة أهالي حي ${zone} بالرياض.</p>
+                `;
+                fragment.appendChild(entity);
+
+                const spiderLink = document.createElement('a');
+                spiderLink.href = `?service=${encodeURIComponent(intent)}&loc=${encodeURIComponent(zone)}&bot_id=${i}`;
+                spiderLink.textContent = `${intent} ${car} ${zone}`;
+                linkFragment.appendChild(spiderLink);
+            }
+            matrix.appendChild(fragment);
+            bridge.appendChild(linkFragment);
+            console.log("🚀 SEO Matrix Injected Successfully");
+        } catch (e) { console.error("SEO Neural Engine Error"); }
+    }
 
     function renderUI() {
         const faqContainer = document.getElementById('consumer-faq');
-        faqData.forEach(item => {
-            faqContainer.innerHTML += `
-                <div class="visible-q-item">
-                    <h3>${item.q}</h3>
-                    <p>${item.a}</p>
-                </div>`;
-        });
-
-        const services = ["تنجيد شد وكالة", "حماية PPF ملكية", "تظليل نانو سيراميك", "عزل أرضيات 7D"];
-        const grid = document.getElementById('services-area');
-        services.forEach(s => {
-            grid.innerHTML += `<div class="service-card"><h3>${s}</h3><p>خدمة VIP احترافية لسيارات ${model} في ${region}.</p></div>`;
+        visibleFaq.forEach(item => {
+            faqContainer.innerHTML += `<div class="visible-q-item"><h3>${item.q}</h3><p>${item.a}</p></div>`;
         });
     }
 
-    // 5. حركة الماوس والتوهج
-    const cursor = document.getElementById('cursor');
-    document.addEventListener('mousemove', e => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
+    function enableSound() {
+        const iframe = document.getElementById('hero-video');
+        iframe.src = iframe.src.replace("mute=1", "mute=0");
+    }
 
-    // التنفيذ عند التحميل
     window.onload = () => {
-        initDynamicContent();
         renderUI();
-        triggerSpider();
-        fastIndex();
+        setTimeout(bootNeuralIndexer, 1000); // الحقن بعد ثانية لضمان سرعة الصفحة للعميل
+        const cta = document.getElementById('main-cta');
+        setTimeout(() => cta.classList.add('cta-active'), 5000);
+        const cursor = document.getElementById('cursor');
+        document.addEventListener('mousemove', e => { cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`; });
     };
-
 </script>
 </body>
 </html>
